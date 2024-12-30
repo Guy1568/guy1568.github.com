@@ -38,4 +38,112 @@ header h1 {
 /* Menu de navigation */
 nav ul {
     list-style: none;
-    padding: 
+    padding: 0;
+    margin: 10px 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Image de profil */
+.profile-image {
+    max-width: 150px; /* Taille maximale de l'image */
+    width: 100%; /* L'image utilise toute la largeur disponible */
+    height: auto; /* Conserve les proportions de l'image */
+    border-radius: 50%; /* Image circulaire */
+    border: 5px solid #007bff; /* Bordure bleue */
+    box-shadow: 0 4px 15px rgba(0, 123, 255, 0.5); /* Ombre */
+    display: block;
+    margin: 20px auto;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-sizing: border-box; /* S'assure que la bordure fait partie de la largeur totale */
+}
+
+/* Effet de survol sur l'image */
+.profile-image:hover {
+    transform: scale(1.05); /* Agrandir légèrement l'image */
+    box-shadow: 0 6px 20px rgba(0, 123, 255, 0.7); /* Ombre plus prononcée */
+}
+
+/* Section */
+section {
+    padding: 40px;
+    margin: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 1000px; /* Limite la largeur de la section */
+}
+
+/* Titre des sections */
+section h2 {
+    color: #007bff;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* Listes dans les sections */
+section ul {
+    list-style-position: inside;
+    padding-left: 0;
+    margin-top: 20px;
+}
+
+section li {
+    margin-bottom: 15px;
+}
+
+section li strong {
+    font-size: 1.1rem;
+    color: #333;
+    font-weight: bold;
+}
+
+section li p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.8;
+    margin-top: 5px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+}
+
+/* Media Queries pour les petits écrans (ex : mobile) */
+@media only screen and (max-width: 768px) {
+    body {
+        padding-top: 120px; /* Ajuste le padding pour que le contenu ne soit pas masqué sous le header */
+    }
+
+    .profile-image {
+        max-width: 120px; /* Réduit la taille de l'image sur les petits écrans */
+        border: 3px solid #007bff; /* Réduit la taille de la bordure sur mobile */
+    }
+
+    header h1 {
+        font-size: 2rem; /* Réduit la taille du titre du header sur les petits écrans */
+    }
+
+    nav ul li {
+        margin: 0 10px; /* Réduit l'espacement entre les liens */
+    }
+}
