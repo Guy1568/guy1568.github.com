@@ -8,10 +8,30 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center; /* Centre horizontalement */
-    justify-content: flex-start; /* Ajuste l'alignement vertical en haut */
-    text-align: left; /* Change l'alignement du texte pour l'ensemble du contenu */
-    color: #333; /* Couleur principale du texte */
-    padding-top: 80px; /* Compense la hauteur du header fixé */
+    justify-content: center; /* Centre verticalement */
+    text-align: center; /* Centre le texte */
+    color: #333; /* Couleur de base du texte */
+    padding-top: 80px; /* Compense la hauteur du header fixe */
+}
+
+/* Image de profil */
+.profile-image {
+    max-width: 150px; /* Taille maximale de l'image */
+    width: 100%; /* L'image utilise toute la largeur disponible */
+    height: auto; /* Conserve les proportions de l'image */
+    border-radius: 50%; /* Image circulaire */
+    border: 5px solid #007bff; /* Bordure bleue */
+    box-shadow: 0 4px 15px rgba(0, 123, 255, 0.5); /* Ombre */
+    display: block;
+    margin: 20px auto;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-sizing: border-box; /* Pour que la bordure fasse partie de la largeur totale */
+}
+
+/* Effet de survol sur l'image */
+.profile-image:hover {
+    transform: scale(1.05); /* Agrandir légèrement l'image */
+    box-shadow: 0 6px 20px rgba(0, 123, 255, 0.7); /* Ombre plus prononcée */
 }
 
 /* Header */
@@ -20,12 +40,12 @@ header {
     color: #ffffff;
     padding: 20px 0;
     text-align: center;
-    width: 100%; /* S'assure que le header s'étend sur toute la largeur */
-    margin: 0; /* Supprime les marges par défaut */
+    width: 100%;
+    margin: 0;
     position: fixed; /* Fixe le header en haut de la page */
-    top: 0; /* Positionne le header tout en haut de la fenêtre */
-    left: 0; /* Aligne à gauche */
-    z-index: 1000; /* S'assure que le header est au-dessus des autres éléments */
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Assure que le header est au-dessus des autres éléments */
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Ombre discrète pour l'esthétique */
 }
 
@@ -53,27 +73,7 @@ nav ul li a {
     font-weight: bold;
 }
 
-/* Image de profil */
-.profile-image {
-    max-width: 150px; /* Taille maximale de l'image */
-    width: 100%; /* L'image utilise toute la largeur disponible */
-    height: auto; /* Conserve les proportions de l'image */
-    border-radius: 50%; /* Image circulaire */
-    border: 5px solid #007bff; /* Bordure bleue */
-    box-shadow: 0 4px 15px rgba(0, 123, 255, 0.5); /* Ombre */
-    display: block;
-    margin: 20px auto;
-    transition: transform 0.3s, box-shadow 0.3s;
-    box-sizing: border-box; /* S'assure que la bordure fait partie de la largeur totale */
-}
-
-/* Effet de survol sur l'image */
-.profile-image:hover {
-    transform: scale(1.05); /* Agrandir légèrement l'image */
-    box-shadow: 0 6px 20px rgba(0, 123, 255, 0.7); /* Ombre plus prononcée */
-}
-
-/* Section */
+/* Sections */
 section {
     padding: 40px;
     margin: 20px;
@@ -81,15 +81,15 @@ section {
     border-radius: 10px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     width: 90%;
-    max-width: 1000px; /* Limite la largeur de la section */
+    max-width: 1000px; /* Limite la largeur de la section pour les grands écrans */
 }
 
-/* Titre des sections */
+/* Titres des sections */
 section h2 {
     color: #007bff;
     font-size: 2rem;
     margin-bottom: 20px;
-    text-transform: uppercase;
+    text-transform: uppercase; /* Mettre en majuscules */
     font-weight: bold;
 }
 
@@ -119,31 +119,4 @@ section li p {
 
 /* Footer */
 footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-    width: 100%;
-    position: relative;
-    bottom: 0;
-}
-
-/* Media Queries pour les petits écrans (ex : mobile) */
-@media only screen and (max-width: 768px) {
-    body {
-        padding-top: 120px; /* Ajuste le padding pour que le contenu ne soit pas masqué sous le header */
-    }
-
-    .profile-image {
-        max-width: 120px; /* Réduit la taille de l'image sur les petits écrans */
-        border: 3px solid #007bff; /* Réduit la taille de la bordure sur mobile */
-    }
-
-    header h1 {
-        font-size: 2rem; /* Réduit la taille du titre du header sur les petits écrans */
-    }
-
-    nav ul li {
-        margin: 0 10px; /* Réduit l'espacement entre les liens */
-    }
-}
+  
