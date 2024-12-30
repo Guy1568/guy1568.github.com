@@ -11,11 +11,7 @@ body {
     justify-content: flex-start; /* Ajuste l'alignement vertical en haut */
     text-align: left; /* Change l'alignement du texte pour l'ensemble du contenu */
     color: #333; /* Couleur principale du texte */
-}
-
-.profile-image {
-    max-width: 100%; /* S'assure que l'image ne dépasse pas la largeur de l'écran */
-    height: auto; /* Garde les proportions de l'image */
+    padding-top: 80px; /* Compense la hauteur du header fixé */
 }
 
 /* Header */
@@ -26,8 +22,14 @@ header {
     text-align: center;
     width: 100%; /* S'assure que le header s'étend sur toute la largeur */
     margin: 0; /* Supprime les marges par défaut */
+    position: fixed; /* Fixe le header en haut de la page */
+    top: 0; /* Positionne le header tout en haut de la fenêtre */
+    left: 0; /* Aligne à gauche */
+    z-index: 1000; /* S'assure que le header est au-dessus des autres éléments */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Ombre discrète pour l'esthétique */
 }
 
+/* Titre du header */
 header h1 {
     margin: 0;
     font-size: 2.5rem;
@@ -36,78 +38,4 @@ header h1 {
 /* Menu de navigation */
 nav ul {
     list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: #ffffff;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-/* Profil image */
-.profile-image {
-    max-width: 150px; /* Ajustez la taille selon vos préférences */
-    border-radius: 50%; /* Rendre l'image circulaire */
-    border: 5px solid #007bff; /* Bordure de couleur bleue */
-    box-shadow: 0 4px 15px rgba(0, 123, 255, 0.5); /* Ombre portée plus marquée */
-    display: block;
-    margin: 20px auto; /* Centrer l'image */
-    transition: transform 0.3s, box-shadow 0.3s; /* Animation au survol */
-}
-
-.profile-image:hover {
-    transform: scale(1.05); /* Agrandir légèrement au survol */
-    box-shadow: 0 6px 20px rgba(0, 123, 255, 0.7); /* Ombre plus prononcée au survol */
-}
-
-/* Sections */
-section {
-    padding: 40px;
-    margin: 20px;
-    background: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    width: 90%;
-    max-width: 1000px; /* Limite la largeur de la section pour les grandes résolutions */
-}
-
-section h2 {
-    color: #007bff;
-    font-size: 2rem;
-    margin-bottom: 20px; /* Espacement en bas du titre */
-    text-transform: uppercase; /* Mettre le titre en majuscules pour le rendre plus marquant */
-    font-weight: bold;
-}
-
-/* Listes dans les sections */
-section ul {
-    list-style-position: inside;
-    padding-left: 0;
-    margin-top: 20px;
-}
-
-section li {
-    margin-bottom: 15px; /* Espacement entre chaque projet */
-}
-
-section li strong {
-    font-size: 1.1rem;
-    color: #333;
-    font-weight: bold;
-}
-
-section li p {
-    font-size: 1rem;
-    color: #666;
-    line-height: 1.8;
-    margin-top: 5px; /* Espacement entre le titre et le texte */
-}
-
-/* Footer */
-
+    padding: 
