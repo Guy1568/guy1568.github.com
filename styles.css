@@ -8,8 +8,9 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center; /* Centre horizontalement */
-    justify-content: center; /* Centre verticalement */
-    text-align: center; /* Centre le texte */
+    justify-content: flex-start; /* Ajuste l'alignement vertical en haut */
+    text-align: left; /* Change l'alignement du texte pour l'ensemble du contenu */
+    color: #333; /* Couleur principale du texte */
 }
 
 .profile-image {
@@ -17,8 +18,7 @@ body {
     height: auto; /* Garde les proportions de l'image */
 }
 
-
-
+/* Header */
 header {
     background: linear-gradient(90deg, #007bff, #6610f2);
     color: #ffffff;
@@ -33,6 +33,7 @@ header h1 {
     font-size: 2.5rem;
 }
 
+/* Menu de navigation */
 nav ul {
     list-style: none;
     padding: 0;
@@ -49,9 +50,7 @@ nav ul li a {
     font-weight: bold;
 }
 
-
-
-/* Styles pour l'image de profil */
+/* Profil image */
 .profile-image {
     max-width: 150px; /* Ajustez la taille selon vos préférences */
     border-radius: 50%; /* Rendre l'image circulaire */
@@ -67,7 +66,7 @@ nav ul li a {
     box-shadow: 0 6px 20px rgba(0, 123, 255, 0.7); /* Ombre plus prononcée au survol */
 }
 
-
+/* Sections */
 section {
     padding: 40px;
     margin: 20px;
@@ -75,18 +74,40 @@ section {
     border-radius: 10px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     width: 90%;
+    max-width: 1000px; /* Limite la largeur de la section pour les grandes résolutions */
 }
 
 section h2 {
     color: #007bff;
+    font-size: 2rem;
+    margin-bottom: 20px; /* Espacement en bas du titre */
+    text-transform: uppercase; /* Mettre le titre en majuscules pour le rendre plus marquant */
+    font-weight: bold;
 }
 
-footer {
-    background-color: #333; /* Couleur de fond */
-    color: white; /* Couleur du texte */
-    text-align: center; /* Centre le texte */
-    padding: 20px 0; /* Ajoute de l'espace en haut et en bas */
-    width: 100%; /* S'assure que le footer s'étend sur toute la largeur */
-    position: relative; /* Permet un bon comportement de mise en page */
-    bottom: 0; /* Assure qu'il reste en bas de la page */
+/* Listes dans les sections */
+section ul {
+    list-style-position: inside;
+    padding-left: 0;
+    margin-top: 20px;
 }
+
+section li {
+    margin-bottom: 15px; /* Espacement entre chaque projet */
+}
+
+section li strong {
+    font-size: 1.1rem;
+    color: #333;
+    font-weight: bold;
+}
+
+section li p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.8;
+    margin-top: 5px; /* Espacement entre le titre et le texte */
+}
+
+/* Footer */
+
