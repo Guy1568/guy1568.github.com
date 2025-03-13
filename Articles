@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Articles - Portfolio de Guy-Olivier NIBIMPA</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Guy-Olivier NIBIMPA</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="about.html">À propos</a></li>
+                <li><a href="skills.html">Compétences</a></li>
+                <li><a href="projects.html">Projets</a></li>
+                <li><a href="articles.html">Articles</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Mes Articles sur la Communication</h2>
+        <article>
+            <h3>Les Clés d’une Stratégie de Communication Réussie</h3>
+            <p>Une bonne stratégie de communication repose sur la clarté du message, la connaissance du public cible et l’utilisation des bons canaux. Dans cet article, je partage des conseils pratiques pour optimiser votre communication.</p>
+            <a href="#">Lire plus</a>
+        </article>
+        
+        <article>
+            <h3>L'Importance du Personal Branding dans un Monde Connecté</h3>
+            <p>Le personal branding est essentiel pour se démarquer dans le monde professionnel. Découvrez comment bâtir une image de marque forte et authentique.</p>
+            <a href="#">Lire plus</a>
+        </article>
+        
+        <article>
+            <h3>Comment Utiliser les Réseaux Sociaux pour Engager son Audience ?</h3>
+            <p>Les réseaux sociaux sont devenus un outil incontournable pour interagir avec son audience. Cet article explore des stratégies efficaces pour maximiser l'engagement.</p>
+            <a href="#">Lire plus</a>
+        </article>
+        
+        <article>
+            <h3>Une Rencontre Inattendue : Le Bitcoin et la Crypto-Monnaie, Un Nouveau Pari pour le Burundi</h3>
+            <p>C'était une journée ordinaire à Bujumbura, où la chaleur accablante de l'après-midi se mêlait au rythme effervescent de la ville...</p>
+            <p>(Texte complet de l'article ajouté ici)</p>
+        </article>
+        
+        <article>
+            <h3>Communication Stratégique : Pilier du Succès des Organisations</h3>
+            <p>Dans un monde où l'information circule à une vitesse fulgurante, la communication stratégique est devenue un levier essentiel pour toute organisation souhaitant influencer son public et atteindre ses objectifs. Que ce soit dans le cadre d’une entreprise, d’une institution publique ou d’une ONG, la manière dont le message est construit et diffusé peut faire la différence entre l’adhésion et l’indifférence.</p>
+            
+            <p>La communication stratégique repose sur trois piliers fondamentaux : la compréhension du public cible, la cohérence des messages et le choix des bons canaux de diffusion. Une organisation qui maîtrise ces éléments peut non seulement renforcer sa notoriété, mais aussi bâtir une relation de confiance avec ses parties prenantes.</p>
+            
+            <p>Dans cet article, nous explorerons les meilleures pratiques en matière de communication stratégique, notamment l'importance d’une analyse approfondie des besoins de l’audience, l’élaboration d’un message clair et percutant, ainsi que l’utilisation des outils numériques pour optimiser l’impact des campagnes. Nous verrons également comment certaines entreprises et institutions ont su transformer leur communication pour atteindre de nouveaux sommets.</p>
+            
+            <p>À travers des études de cas et des conseils concrets, cet article vous aidera à comprendre pourquoi une stratégie de communication bien pensée est un atout majeur dans le paysage actuel. Si vous souhaitez en savoir plus sur la manière dont vous pouvez appliquer ces principes à votre propre organisation, poursuivez la lecture.</p>
+            <a href="#">Lire plus</a>
+        </article>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Guy-Olivier NIBIMPA. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
